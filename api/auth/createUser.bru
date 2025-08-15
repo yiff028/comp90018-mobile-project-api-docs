@@ -1,0 +1,24 @@
+meta {
+  name: createUser
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://pawtrack.xyz/api/auth/createUser
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username":"test1",   //use to login
+    "nickname":"test1",   //display to other users
+    "password":"123456",
+    "description":"hello world!"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
