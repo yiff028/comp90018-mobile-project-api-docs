@@ -1,0 +1,30 @@
+meta {
+  name: createDog
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://pawtrack.xyz/api/dog/createDog
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"dog1",
+    "breed":"beagle", 
+    "customizedBreed":"customize text place",
+    "gender":"male", //'male','female','other'
+    "weight":28.5,
+    "healthCondition":"as you wish",
+    "img":"https://pawtrack.xyz/image/781826bd-0cf2-43bd-9271-5229353c827c.jpg",
+    "age":"young"  //'young','adult','old'
+  }
+  
+  //breed: 'labrador_retriever','german_shepherd_dog','golden_retriever','french_bulldog','bulldog','beagle','poodle','rottweiler','german_shorthaired_pointer','yorkshire_terrier','dachshund','siberian_husky','great_dane','pomeranian','boston_terrier','shih_tzu','cocker_spaniel','border_collie','pug','chihuahua','boxer','australian_shepherd','cavalier_king_charles_spaniel','maltese','doberman_pinscher','pembroke_welsh_corgi','shetland_sheepdog','havanese','bernese_mountain_dog','brittany','english_springer_spaniel','mastiff','vizsla','weimaraner','miniature_schnauzer','basset_hound','belgian_malinois','newfoundland','collie','rhodesian_ridgeback','shiba_inu','west_highland_white_terrier','bichon_frise','bloodhound','akita','portuguese_water_dog','papillon','saint_bernard','bull_terrier','soft_coated_wheaten_terrier','airedale_terrier','unknown','other'
+}
+
+settings {
+  encodeUrl: true
+}
