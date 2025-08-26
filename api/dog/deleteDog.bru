@@ -1,0 +1,21 @@
+meta {
+  name: deleteDog
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://pawtrack.xyz/api/dog/deleteDog
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dogId":9
+  }
+}
+
+settings {
+  encodeUrl: true
+}
