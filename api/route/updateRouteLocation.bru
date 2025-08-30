@@ -1,0 +1,23 @@
+meta {
+  name: updateRouteLocation
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://pawtrack.xyz/api/route/updateRouteLocation
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "routeId":2,
+    "longitude":180.5455,
+    "latitude":22.5555
+  }
+}
+
+settings {
+  encodeUrl: true
+}

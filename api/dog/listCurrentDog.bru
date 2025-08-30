@@ -1,0 +1,15 @@
+meta {
+  name: listCurrentDog
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://pawtrack.xyz/api/dog/listCurrentDog
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

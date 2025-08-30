@@ -1,0 +1,21 @@
+meta {
+  name: createRoute
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://pawtrack.xyz/api/route/createRoute
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "dogId":18
+  }
+}
+
+settings {
+  encodeUrl: true
+}

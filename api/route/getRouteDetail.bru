@@ -1,0 +1,19 @@
+meta {
+  name: getRouteDetail
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://pawtrack.xyz/api/route/getRouteDetail?routeId=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  routeId: 2
+}
+
+settings {
+  encodeUrl: true
+}
