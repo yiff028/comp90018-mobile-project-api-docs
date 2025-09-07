@@ -1,0 +1,21 @@
+meta {
+  name: deleteBin
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://pawtrack.xyz/api/bin/deleteBin
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id":1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,22 @@
+meta {
+  name: createBin
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://pawtrack.xyz/api/bin/createBin
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "longitude":180.5455,
+    "latitude":22.5555
+  }
+}
+
+settings {
+  encodeUrl: true
+}
